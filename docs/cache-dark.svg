@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="300" viewBox="0 0 980 300" role="img" aria-label="A word is unseen, then in flight, then answered for the session. A failure pauses requests for five seconds; a refusal is final; a version change clears the answers and stale ones are ignored.">
+<defs><marker id="head" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 z" fill="#8ea2ff"/></marker></defs>
+<rect x="20" y="40" width="200" height="92" rx="10" fill="#1c1e22" stroke="#3a3d44" stroke-width="1.5"/>
+<text x="36" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6e7ea">Unseen</text>
+<text x="36" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">not asked about yet</text>
+<rect x="290" y="40" width="230" height="92" rx="10" fill="#1f2540" stroke="#8ea2ff" stroke-width="1.5"/>
+<text x="306" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6e7ea">In flight</text>
+<text x="306" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">sorted batches of up to 1,000,</text>
+<text x="306" y="108" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">at most two requests at once</text>
+<rect x="590" y="40" width="200" height="92" rx="10" fill="#1c1e22" stroke="#3a3d44" stroke-width="1.5"/>
+<text x="606" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6e7ea">Answered</text>
+<text x="606" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">kept for the session</text>
+<rect x="820" y="40" width="140" height="150" rx="10" fill="#1c1e22" stroke="#3a3d44" stroke-width="1.5"/>
+<text x="836" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#a0a4ac">every answer is</text>
+<text x="836" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#a0a4ac">cleared and asked</text>
+<text x="836" y="120" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#a0a4ac">again; an answer</text>
+<text x="836" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#a0a4ac">from an older</text>
+<text x="836" y="156" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#a0a4ac">request is ignored</text>
+<text x="836" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#e6e7ea">Version changed?</text>
+<line x1="222" y1="86" x2="288" y2="86" stroke="#8ea2ff" stroke-width="1.6" marker-end="url(#head)"/>
+<text x="255" y="76" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#a0a4ac">request</text>
+<line x1="522" y1="86" x2="588" y2="86" stroke="#8ea2ff" stroke-width="1.6" marker-end="url(#head)"/>
+<text x="555" y="76" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#a0a4ac">200</text>
+<rect x="290" y="188" width="230" height="92" rx="10" fill="#1c1e22" stroke="#3a3d44" stroke-width="1.5"/>
+<text x="306" y="216" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6e7ea">Paused, 5 s</text>
+<text x="306" y="238" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">no connection, timeout, 5xx:</text>
+<text x="306" y="256" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">left alone, then asked again</text>
+<line x1="405" y1="134" x2="405" y2="186" stroke="#8ea2ff" stroke-width="1.6" marker-end="url(#head)"/>
+<text x="435" y="164" text-anchor="start" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#a0a4ac">failure</text>
+<line x1="288" y1="234" x2="120" y2="234" stroke="#8ea2ff" stroke-width="1.6" marker-end="url(#head)"/>
+<line x1="120" y1="234" x2="120" y2="134" stroke="#8ea2ff" stroke-width="1.6" marker-end="url(#head)"/>
+<text x="204" y="224" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#a0a4ac">after the pause</text>
+<rect x="590" y="188" width="200" height="92" rx="10" fill="#1c1e22" stroke="#3a3d44" stroke-width="1.5"/>
+<text x="606" y="216" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6e7ea">Refused</text>
+<text x="606" y="238" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">400, 413, or a 422</text>
+<text x="606" y="256" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">naming it: final</text>
+<line x1="522" y1="120" x2="588" y2="212" stroke="#8ea2ff" stroke-width="1.6" marker-end="url(#head)"/>
+<text x="575" y="162" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#a0a4ac">4xx</text>
+</svg>

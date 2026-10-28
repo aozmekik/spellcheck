@@ -1,0 +1,13 @@
+# Go
+*.test
+*.out
+backend/bin/
+
+# Node
+node_modules/
+frontend/dist/
+
+# OS and editors
+.DS_Store
+.idea/
+.vscode/

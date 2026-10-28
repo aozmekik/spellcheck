@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="232" viewBox="0 0 980 232" role="img" aria-label="What each layer is checked against: the spell package by an oracle, a fuzzer and public misspelling sets; the HTTP layer by a test per status; the editor by unit tests and by hand; the whole by one end-to-end test.">
+<defs><marker id="head" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 z" fill="#8ea2ff"/></marker></defs>
+<rect x="20" y="20" width="300" height="124" rx="10" fill="#1f2540" stroke="#8ea2ff" stroke-width="1.5"/>
+<text x="36" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6e7ea">spell</text>
+<text x="36" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">index vs a full scan on 1,300 queries</text>
+<text x="36" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">distance fuzzed against the textbook table</text>
+<text x="36" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">670 public typos, every ranking rule measured</text>
+<text x="36" y="124" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">a million words of prose for false alarms</text>
+<rect x="340" y="20" width="300" height="124" rx="10" fill="#1c1e22" stroke="#3a3d44" stroke-width="1.5"/>
+<text x="356" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6e7ea">httpapi</text>
+<text x="356" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">a test per status code and its body</text>
+<text x="356" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">the request ID in header, body and log line</text>
+<text x="356" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">no word ever in a log line</text>
+<text x="356" y="124" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">499 on a disconnect, 500 on a panic</text>
+<rect x="660" y="20" width="300" height="124" rx="10" fill="#1c1e22" stroke="#3a3d44" stroke-width="1.5"/>
+<text x="676" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e6e7ea">editor</text>
+<text x="676" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">unit tests: cache, tokenizer, quick fixes,</text>
+<text x="676" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">status text, dictionary, draft</text>
+<text x="676" y="106" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">by hand: the CodeMirror glue</text>
+<text x="676" y="124" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">cut: a Playwright run of the whole journey</text>
+<rect x="20" y="166" width="940" height="42" rx="10" fill="#1c1e22" stroke="#3a3d44" stroke-width="1.5"/>
+<text x="36" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#a0a4ac">End to end: one test starts the real service on a free port, checks words over HTTP, then cancels it the way SIGTERM would and reads the log lines.</text>
+</svg>

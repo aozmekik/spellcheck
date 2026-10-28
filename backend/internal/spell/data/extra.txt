@@ -1,0 +1,24 @@
+# Words to add to the ESDB list, one per line; counts come from the same
+# corpus as the rest.
+
+# ESDB has only "OK", and people write "ok".
+ok
+
+# The vocabulary of software work, which ESDB lacks: the brief's own words
+# first, then a few of the same kind.
+backend
+frontend
+tradeoff
+tradeoffs
+timebox
+timeboxed
+timeboxing
+config
+configs
+readme
+signup
+webhook
+webhooks
+linter
+linters
+serverless

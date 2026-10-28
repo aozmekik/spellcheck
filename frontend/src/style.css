@@ -1,0 +1,184 @@
+:root {
+  --page: #ffffff;
+  --surface: #ffffff;
+  --text: #1d1e22;
+  --muted: #676b73;
+  --faint: #9b9fa7;
+  --border: #e6e7eb;
+  --hover: #f1f2f4;
+  --brand: #3b5bdb;
+  --accent: #3b5bdb;
+  --selection: #dbe4ff;
+  --ok: #2b9a66;
+  --warn: #d4a72c;
+  --error: #e5484d;
+  --shadow: 0 12px 32px -12px rgb(16 18 24 / 0.24), 0 2px 6px rgb(16 18 24 / 0.06);
+
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--page);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #141518;
+    --surface: #1c1e22;
+    --text: #e6e7ea;
+    --muted: #a0a4ac;
+    --faint: #6e727b;
+    --border: #2c2f35;
+    --hover: #272a30;
+    --brand: #4c6ef5;
+    --accent: #8ea2ff;
+    --selection: #2d3a66;
+    --ok: #3dd68c;
+    --warn: #f0b429;
+    --error: #ff6369;
+    --shadow: 0 12px 32px -12px rgb(0 0 0 / 0.7), 0 2px 6px rgb(0 0 0 / 0.3);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 3.5rem;
+  flex-shrink: 0;
+  padding: 0 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.brand svg {
+  width: 1.375rem;
+  height: 1.375rem;
+  color: var(--brand);
+}
+
+/* Truncates rather than widening the page on the narrowest phones. */
+.status {
+  min-width: 0;
+  margin: 0;
+  padding: 0.25rem 0.75rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.status::before {
+  content: '';
+  display: inline-block;
+  width: 0.4375rem;
+  height: 0.4375rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  vertical-align: 0.0625rem;
+  background: var(--faint);
+}
+
+.status[data-state='clean']::before {
+  background: var(--ok);
+}
+
+.status[data-state='issues']::before {
+  background: var(--error);
+}
+
+.status[data-state='offline']::before,
+.status[data-state='rejected']::before {
+  background: var(--warn);
+}
+
+main {
+  flex: 1;
+  min-height: 0;
+}
+
+.hints {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 1.5rem;
+  padding: 0.75rem 1.25rem 1rem;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+
+.hint-touch {
+  display: none;
+}
+
+/* On a touch screen there is no hover and usually no keyboard. */
+@media (pointer: coarse) {
+  .hint-pointer,
+  .hint-key {
+    display: none;
+  }
+
+  .hint-touch {
+    display: inline;
+  }
+}
+
+/* High-contrast modes drop background images, so draw the underline with text decoration. */
+@media (forced-colors: active) {
+  .cm-lintRange-error {
+    text-decoration: underline wavy;
+  }
+}
+
+kbd {
+  margin-right: 0.25rem;
+  padding: 0.0625rem 0.375rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  #editor .cm-content {
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* The mark alone names the app, leaving room for the status. */
+  .brand-name {
+    display: none;
+  }
+}
